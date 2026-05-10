@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misala Chennakeshava | AI Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-container">
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <!-- Removed Logo as requested -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Experience</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary-sm">Let's Talk</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span> Available for Hire
+                </div>
+                <h1 class="name">Misala Chennakeshava</h1>
+                <div class="typing-container">
+                    <span class="static-text">I build</span>
+                    <span class="typed-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="summary">
+                    AI Engineer with hands-on experience designing and deploying production-grade AI systems integrating LLMs, workflow automation, and scalable backend architectures. Focused on developing reliable, end-to-end AI platforms including resume parsing engines, conversational AI, and analytics automation.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                
+                <div class="profile-container tilt-card">
+                    <!-- The fallback circle with initials MC -->
+                    <div class="profile-placeholder" id="profile-fallback">MC</div>
+                    <!-- The actual image tag looking for profile.png -->
+                    <img src="profile.png" alt="Profile" class="profile-img" onload="document.getElementById('profile-fallback').style.display='none'" onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex'">
+                </div>
+                
+                <div class="float-badge fb-1 glass-card">
+                    <div class="fb-icon">🧠</div>
+                    <div class="fb-text">
+                        <span>Expertise</span>
+                        <strong>LLMs & RAG</strong>
+                    </div>
+                </div>
+                <div class="float-badge fb-2 glass-card">
+                    <div class="fb-icon">⚡</div>
+                    <div class="fb-text">
+                        <span>Backend</span>
+                        <strong>FastAPI & Python</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="skills-marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <!-- Full tech stack array -->
+                <div class="skill-pill highlight">Python</div>
+                <div class="skill-pill highlight">FastAPI</div>
+                <div class="skill-pill">Gemini Pro & Mistral AI</div>
+                <div class="skill-pill">LLaMA 3 (Groq API)</div>
+                <div class="skill-pill highlight">RAG Architecture</div>
+                <div class="skill-pill">Langchain</div>
+                <div class="skill-pill">Prompt Engineering</div>
+                <div class="skill-pill">Semantic Search</div>
+                <div class="skill-pill highlight">n8n Automation</div>
+                <div class="skill-pill">MCP Server Architecture</div>
+                <div class="skill-pill highlight">PostgreSQL & MySQL</div>
+                <div class="skill-pill">Pinecone (Vector DB)</div>
+                <div class="skill-pill">Sentence Transformers</div>
+                <div class="skill-pill">Web Scraping & Google Sheets API</div>
+                
+                <!-- Duplicate for infinite scroll -->
+                <div class="skill-pill highlight">Python</div>
+                <div class="skill-pill highlight">FastAPI</div>
+                <div class="skill-pill">Gemini Pro & Mistral AI</div>
+                <div class="skill-pill">LLaMA 3 (Groq API)</div>
+                <div class="skill-pill highlight">RAG Architecture</div>
+                <div class="skill-pill">Langchain</div>
+                <div class="skill-pill">Prompt Engineering</div>
+                <div class="skill-pill">Semantic Search</div>
+                <div class="skill-pill highlight">n8n Automation</div>
+                <div class="skill-pill">MCP Server Architecture</div>
+                <div class="skill-pill highlight">PostgreSQL & MySQL</div>
+                <div class="skill-pill">Pinecone (Vector DB)</div>
+                <div class="skill-pill">Sentence Transformers</div>
+                <div class="skill-pill">Web Scraping & Google Sheets API</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Work <span>Experience</span></h2>
+            <p class="section-subtitle">Professional journey and academic background.</p>
+        </div>
+        
+        <div class="split-content" style="grid-template-columns: 1fr;">
+            <!-- Experience -->
+            <div class="premium-card glow-effect experience-card" style="margin-bottom: 2rem;">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <div class="exp-header">
+                        <span class="exp-date">Aug 2025 - Present</span>
+                        <span class="exp-company">TriTech</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">AI Engineer</h3>
+                    <p style="color: var(--text-muted); margin-top: 1rem; line-height: 1.8;">
+                        Leading the architectural design and deployment of production-grade AI platforms. I specialize in building scalable FastAPI backends and integrating advanced Large Language Models (Gemini, Mistral) to automate complex recruitment workflows. My role involves transforming traditional HR processes into intelligent, automated systems.
+                    </p>
+                    <div style="margin-top: 1.5rem; display: grid; gap: 1rem;">
+                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: #fff;">Workflow Orchestration:</strong> Engineered n8n pipelines that connect LLMs, OCR, and Speech-to-Text APIs to fully automate document processing and candidate communication.
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent-glow);">
+                            <strong style="color: #fff;">Intelligent Systems:</strong> Developed custom HR chatbots capable of context-aware responses, backed by real-time monitoring and error-notification architectures.
+                        </div>
+                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent);">
+                            <strong style="color: #fff;">Advanced Retrieval:</strong> Currently implementing RAG architectures and vector database integrations to power embedding-based search for massive datasets.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academics -->
+            <div class="premium-card glow-effect experience-card">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <div class="exp-header">
+                        <span class="exp-date">Sept 2020 – May 2024</span>
+                        <span class="exp-company">JNTU-Anantapur</span>
+                    </div>
+                    <h3>Artificial Intelligence and Data Science</h3>
+                    <p>Academic profile and foundational degree building core expertise in AI, ML, and Data Science methodologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Selected <span>Projects</span></h2>
+            <p class="section-subtitle">Deep dive into my core implementations.</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="premium-card project-card glow-effect">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <div class="project-header">
+                        <h3>AI-Powered Talent Matching Platform</h3>
+                    </div>
+                    <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">
+                        A highly scalable semantic matching engine designed to evaluate candidate fitness against complex job descriptions. By integrating Pinecone vector search with a custom <strong>75% semantic / 25% skill-match algorithm</strong>, this system dynamically filters and ranks talent based on precise constraints like location. The pipeline leverages a two-stage retrieval process and uses LLaMA 3 via Groq to generate actionable, contextual candidate summaries for recruiters.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Pinecone</span><span>SentenceTransformers</span><span>LLaMA 3</span><span>NLP</span><span>Vector Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="premium-card project-card glow-effect">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <div class="project-header">
+                        <h3>Multilingual Voice-to-Resume Generator</h3>
+                    </div>
+                    <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">
+                        An innovative AI system that converts spoken user input into professionally formatted resumes and cover letters. I engineered a robust preprocessing layer capable of noise removal and multilingual translation. Using a hybrid extraction approach, the system combines strict regex anchors with LLM-based role inference (Gemini/Mistral) to intelligently auto-translate and structure raw speech into perfect resume templates via n8n automation.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Gemini/Mistral</span><span>Speech-to-Text</span><span>Translation APIs</span><span>Prompt Engineering</span><span>n8n</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="premium-card project-card glow-effect">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <div class="project-header">
+                        <h3>AI Chatbot Agent with MCP Server</h3>
+                    </div>
+                    <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">
+                        A multi-turn conversational AI capable of interacting securely with backend databases using a custom Model Context Protocol (MCP) tool-calling architecture. The system executes a strict 3-stage handshake—intent detection, dynamic tool selection via JSON, and response summarization. By integrating Python handlers with SQLAlchemy and PostgreSQL, the chatbot transforms raw database outputs into natural, user-friendly dialogue.
+                    </p>
+                    <div class="tech-stack">
+                        <span>FastAPI</span><span>Groq</span><span>MCP Architecture</span><span>SQLAlchemy</span><span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section split-section">
+        <div class="split-content">
+            <div class="split-left">
+                <h2 class="section-title">Key <span>Achievements</span></h2>
+                <div class="premium-card glow-effect experience-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+                            Beyond my core engineering roles, I take pride in independently driving initiatives that deliver tangible business value through automation and web development.
+                        </p>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px;">
+                                <strong style="color: var(--accent); font-size: 1.1rem; display: block; margin-bottom: 0.3rem;">Business Automation</strong>
+                                <span style="color: var(--text-muted); font-size: 0.95rem;">Designed end-to-end n8n workflows that automate candidate communication and resume parsing, significantly reducing manual HR overhead.</span>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px;">
+                                <strong style="color: var(--accent-glow); font-size: 1.1rem; display: block; margin-bottom: 0.3rem;">Digital Presence</strong>
+                                <span style="color: var(--text-muted); font-size: 0.95rem;">Architected and launched the official company website for <strong>Stafi Solution</strong>, establishing their core digital presence and operational foundation.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="split-right">
+                <h2 class="section-title">Licenses & <span>Certs</span></h2>
+                <div class="premium-card glow-effect cert-card tilt-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <h3>Claude with the Anthropic API</h3>
+                        <p class="cert-issuer">Anthropic</p>
+                        <div class="cert-img-wrapper" style="cursor: pointer;" onclick="document.getElementById('certModal').style.display='flex'; document.getElementById('modalImg').src=this.querySelector('img').src;">
+                            <img src="certificate.png" alt="Certificate" class="cert-img" onerror="this.style.display='none'">
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">Click to view full screen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="premium-card glow-effect contact-card">
+            <div class="glow-border"></div>
+            <div class="card-content">
+                <h2 class="section-title">Let's <span>Connect</span></h2>
+                <p>I'm ready to bring scalable AI integrations and automated workflows to your team. Let's discuss your next big project.</p>
+                <div class="contact-grid" style="flex-wrap: wrap;">
+                    <a href="mailto:chennamisala9@gmail.com" class="contact-btn">
+                        <span class="icon">✉</span> chennamisala9@gmail.com
+                    </a>
+                    <a href="tel:+918985928915" class="contact-btn">
+                        <span class="icon">📞</span> +91 8985928915
+                    </a>
+                    <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                        <span class="icon" style="font-family: sans-serif; font-weight: bold; color: #0a66c2;">in</span> LinkedIn
+                    </a>
+                    <div class="contact-btn" style="pointer-events: none;">
+                        <span class="icon">📍</span> Hyderabad, India
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Misala Chennakeshava. Crafted with precision.</p>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
