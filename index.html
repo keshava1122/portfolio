@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,15 +35,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
+    <!-- Reading Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Custom Cursor & Soft Cursor Glow -->
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Animated Background -->
+    <!-- Interactive Neural Network Canvas & Atmospheric Aurora Background -->
     <div class="bg-container">
-        <div class="ambient-glow glow-1"></div>
-        <div class="ambient-glow glow-2"></div>
-        <div class="ambient-glow glow-3"></div>
+        <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+        <div class="ambient-glow glow-violet"></div>
+        <div class="ambient-glow glow-cyan"></div>
+        <div class="ambient-glow glow-pink"></div>
         <div class="grid-overlay"></div>
         <div class="noise-overlay"></div>
     </div>
@@ -52,22 +57,26 @@
     <nav class="navbar" id="main-nav">
         <div class="nav-content">
             <a href="#home" class="logo" aria-label="Home">
-                CK<span>.AI</span>
+                <span class="logo-text">CK<span class="logo-dot">.AI</span></span>
             </a>
 
-            <!-- Desktop Links -->
+            <!-- Desktop Navigation Links -->
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
-                <a href="#contact" class="btn-primary-sm">Let's Talk</a>
+                <!-- Theme Toggle Button (Light/Dark) -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme" title="Switch Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn-primary-sm magnetic">Let's Talk</a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -79,7 +88,7 @@
             <ul class="mobile-links">
                 <li><a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-code"></i> Projects</a></li>
-                <li><a href="#certifications" class="mobile-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+                <li><a href="#certifications" class="mobile-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
                 <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
                 <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
                 <li><a href="#achievements" class="mobile-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
@@ -92,18 +101,18 @@
         <!-- Hero Section -->
         <header class="hero" id="home">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text reveal">
                     <div class="status-badge">
                         <span class="pulse-dot"></span> Available for AI Engineering & Full-Stack Roles
                     </div>
                     
-                    <h1 class="name">Chennakeshava Misala</h1>
+                    <h1 class="name">Chennakeshava <span class="gradient-name">Misala</span></h1>
                     
                     <div class="title-tags">
-                        <span class="title-badge highlight">AI Engineer</span>
-                        <span class="title-badge">Generative AI Specialist</span>
-                        <span class="title-badge">Python Full Stack Developer</span>
-                        <span class="title-badge">AI Automation Architect</span>
+                        <span class="title-badge badge-violet"><i class="fa-solid fa-brain"></i> AI Engineer</span>
+                        <span class="title-badge badge-cyan"><i class="fa-solid fa-microchip"></i> Generative AI Specialist</span>
+                        <span class="title-badge badge-pink"><i class="fa-brands fa-python"></i> Python Full Stack</span>
+                        <span class="title-badge"><i class="fa-solid fa-gears"></i> Automation Architect</span>
                     </div>
 
                     <div class="typing-container">
@@ -112,66 +121,67 @@
                     </div>
 
                     <p class="summary">
-                        AI Engineer with <strong>1.5+ years of experience</strong> engineering production LLM applications, RAG systems, Model Context Protocol (MCP) servers, scalable FastAPI backends, and automated enterprise pipelines. Certified in <strong>Oracle Agentic AI</strong> and <strong>Microsoft SQL AI Development</strong>.
+                        AI Engineer with <strong>1.5+ years of production experience</strong> engineering LLM pipelines, RAG systems, Model Context Protocol (MCP) servers, scalable FastAPI backends, and automated enterprise workflows. Dual certified in <strong>Oracle Agentic AI</strong> and <strong>Microsoft SQL AI Development</strong>.
                     </p>
 
-                    <!-- Quick Metric Strip -->
+                    <!-- Animated Metric Counter Strip -->
                     <div class="hero-stats-strip">
                         <div class="stat-card">
-                            <span class="stat-num">1.5+</span>
+                            <span class="stat-num" data-target="1.5" data-suffix="+" data-decimals="1">0</span>
                             <span class="stat-label">Years AI & Backend</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-num">8+</span>
+                            <span class="stat-num" data-target="8" data-suffix="+">0</span>
                             <span class="stat-label">Production AI Systems</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-num">2</span>
-                            <span class="stat-label">Global AI Certifications</span>
+                            <span class="stat-num" data-target="2" data-suffix=" Global">0</span>
+                            <span class="stat-label">AI Certifications</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-num">100%</span>
+                            <span class="stat-num" data-target="100" data-suffix="%">0</span>
                             <span class="stat-label">Production Uptime</span>
                         </div>
                     </div>
 
                     <div class="hero-actions">
-                        <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> Explore Projects</a>
-                        <a href="#certifications" class="btn-secondary"><i class="fa-solid fa-award"></i> View Certifications</a>
-                        <a href="https://wa.me/918985928195?text=Hi%20Chennakeshava,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" title="Chat on WhatsApp">
+                        <a href="#projects" class="btn-primary magnetic"><i class="fa-solid fa-rocket"></i> Explore Projects</a>
+                        <a href="#certifications" class="btn-secondary magnetic"><i class="fa-solid fa-award"></i> View Credentials</a>
+                        <a href="https://wa.me/918985928195?text=Hi%20Chennakeshava,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn-whatsapp magnetic" title="Chat on WhatsApp">
                             <i class="fa-brands fa-whatsapp"></i> WhatsApp
                         </a>
                     </div>
 
                     <div class="social-quick-links">
-                        <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon-btn" title="GitHub">
+                        <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon-btn magnetic" title="GitHub">
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon-btn" title="LinkedIn">
+                        <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon-btn magnetic" title="LinkedIn">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:chennamisala9@gmail.com" aria-label="Email Me" class="social-icon-btn" title="Email">
+                        <a href="mailto:chennamisala9@gmail.com" aria-label="Email Me" class="social-icon-btn magnetic" title="Email">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
-                        <a href="tel:+918985928195" aria-label="Call Me" class="social-icon-btn" title="Phone">
+                        <a href="tel:+918985928195" aria-label="Call Me" class="social-icon-btn magnetic" title="Phone">
                             <i class="fa-solid fa-phone"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="hero-visual">
-                    <div class="ring ring-1"></div>
-                    <div class="ring ring-2"></div>
-                    <div class="ring ring-3"></div>
+                <div class="hero-visual reveal">
+                    <!-- Rotating Multi-Stop Gradient Aura Ring -->
+                    <div class="rotating-gradient-ring"></div>
+                    <div class="ring ring-ambient ring-1"></div>
+                    <div class="ring ring-ambient ring-2"></div>
                     
                     <div class="profile-container tilt-card">
-                        <!-- Fallback initials MC -->
+                        <!-- Fallback initials CM -->
                         <div class="profile-placeholder" id="profile-fallback">CM</div>
                         <!-- Profile Image -->
                         <img src="profile.png" alt="Chennakeshava Misala" class="profile-img" onload="document.getElementById('profile-fallback').style.display='none'" onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex'">
                     </div>
                     
-                    <!-- Floating Tech Badges -->
+                    <!-- Floating Skill Chips with Glassmorphism -->
                     <div class="float-badge fb-1 glass-card">
                         <div class="fb-icon">🧠</div>
                         <div class="fb-text">
@@ -199,21 +209,21 @@
             </div>
         </header>
 
-        <!-- Tech Stack Infinite Marquee -->
+        <!-- Tech Stack Infinite Marquee Ticker -->
         <section id="skills-marquee" class="skills-marquee-section" aria-label="Technical Stack Marquee">
             <div class="marquee-container">
                 <div class="marquee-content">
-                    <div class="skill-pill highlight"><i class="fa-brands fa-python"></i> Python</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-bolt"></i> FastAPI</div>
-                    <div class="skill-pill"><i class="fa-solid fa-brain"></i> Generative AI & LLMs</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-network-wired"></i> RAG Architecture</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-diagram-project"></i> MCP Protocol</div>
+                    <div class="skill-pill highlight-violet"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-pill highlight-cyan"><i class="fa-solid fa-bolt"></i> FastAPI</div>
+                    <div class="skill-pill highlight-pink"><i class="fa-solid fa-brain"></i> Generative AI & LLMs</div>
+                    <div class="skill-pill highlight-violet"><i class="fa-solid fa-network-wired"></i> RAG Architecture</div>
+                    <div class="skill-pill highlight-cyan"><i class="fa-solid fa-diagram-project"></i> MCP Protocol</div>
                     <div class="skill-pill"><i class="fa-solid fa-robot"></i> AI Agents & LangGraph</div>
                     <div class="skill-pill">Gemini Pro & Mistral AI</div>
                     <div class="skill-pill">LLaMA 3 & Groq</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-database"></i> PostgreSQL & SQLAlchemy</div>
+                    <div class="skill-pill highlight-violet"><i class="fa-solid fa-database"></i> PostgreSQL & SQLAlchemy</div>
                     <div class="skill-pill"><i class="fa-solid fa-microchip"></i> Pinecone Vector DB</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-gears"></i> n8n Automation</div>
+                    <div class="skill-pill highlight-pink"><i class="fa-solid fa-gears"></i> n8n Automation</div>
                     <div class="skill-pill"><i class="fa-brands fa-whatsapp"></i> Meta WhatsApp Cloud API</div>
                     <div class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & AWS EC2</div>
                     <div class="skill-pill"><i class="fa-brands fa-react"></i> React.js & Vite</div>
@@ -221,18 +231,18 @@
                     <div class="skill-pill">Whisper Speech-to-Text</div>
                     <div class="skill-pill">Sentence Transformers</div>
 
-                    <!-- Duplicate for seamless infinite scroll -->
-                    <div class="skill-pill highlight"><i class="fa-brands fa-python"></i> Python</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-bolt"></i> FastAPI</div>
-                    <div class="skill-pill"><i class="fa-solid fa-brain"></i> Generative AI & LLMs</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-network-wired"></i> RAG Architecture</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-diagram-project"></i> MCP Protocol</div>
+                    <!-- Duplicate for seamless infinite loop -->
+                    <div class="skill-pill highlight-violet"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-pill highlight-cyan"><i class="fa-solid fa-bolt"></i> FastAPI</div>
+                    <div class="skill-pill highlight-pink"><i class="fa-solid fa-brain"></i> Generative AI & LLMs</div>
+                    <div class="skill-pill highlight-violet"><i class="fa-solid fa-network-wired"></i> RAG Architecture</div>
+                    <div class="skill-pill highlight-cyan"><i class="fa-solid fa-diagram-project"></i> MCP Protocol</div>
                     <div class="skill-pill"><i class="fa-solid fa-robot"></i> AI Agents & LangGraph</div>
                     <div class="skill-pill">Gemini Pro & Mistral AI</div>
                     <div class="skill-pill">LLaMA 3 & Groq</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-database"></i> PostgreSQL & SQLAlchemy</div>
+                    <div class="skill-pill highlight-violet"><i class="fa-solid fa-database"></i> PostgreSQL & SQLAlchemy</div>
                     <div class="skill-pill"><i class="fa-solid fa-microchip"></i> Pinecone Vector DB</div>
-                    <div class="skill-pill highlight"><i class="fa-solid fa-gears"></i> n8n Automation</div>
+                    <div class="skill-pill highlight-pink"><i class="fa-solid fa-gears"></i> n8n Automation</div>
                     <div class="skill-pill"><i class="fa-brands fa-whatsapp"></i> Meta WhatsApp Cloud API</div>
                     <div class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & AWS EC2</div>
                     <div class="skill-pill"><i class="fa-brands fa-react"></i> React.js & Vite</div>
@@ -245,28 +255,28 @@
 
         <!-- Projects Showcase Section -->
         <section id="projects" class="section">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Production Engineering</span>
                 <h2 class="section-title">Featured <span>Projects</span></h2>
-                <p class="section-subtitle">Battle-tested architectures in Generative AI, RAG pipelines, autonomous agents, and full-stack systems.</p>
+                <p class="section-subtitle">Battle-tested architectures in Generative AI, RAG retrieval pipelines, autonomous agents, and enterprise full-stack systems.</p>
             </div>
 
-            <!-- Project Category Filters -->
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects <span class="filter-count">(8)</span></button>
-                <button class="filter-btn" data-filter="genai">Generative AI & RAG</button>
-                <button class="filter-btn" data-filter="agents">AI Agents & MCP</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack Backends</button>
-                <button class="filter-btn" data-filter="automation">Automation & CRM</button>
+            <!-- Project Category Filter Tabs with Item Counts -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active magnetic" data-filter="all">All Projects <span class="filter-count">(8)</span></button>
+                <button class="filter-btn magnetic" data-filter="genai">Generative AI & RAG <span class="filter-count">(4)</span></button>
+                <button class="filter-btn magnetic" data-filter="agents">AI Agents & MCP <span class="filter-count">(3)</span></button>
+                <button class="filter-btn magnetic" data-filter="fullstack">Full Stack Backends <span class="filter-count">(4)</span></button>
+                <button class="filter-btn magnetic" data-filter="automation">Automation & CRM <span class="filter-count">(3)</span></button>
             </div>
             
             <div class="projects-grid" id="projects-container">
                 <!-- Project 1: EzStaf (Featured with Play Store) -->
-                <article class="premium-card project-card glow-effect featured-project" data-category="genai agents fullstack">
+                <article class="premium-card project-card glow-effect featured-project tilt-card reveal" data-category="genai agents fullstack">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag highlight"><i class="fa-solid fa-brain"></i> GenAI | Recruitment Tech</span>
+                            <span class="category-tag highlight-violet"><i class="fa-solid fa-brain"></i> GenAI | Recruitment Tech</span>
                             <span class="status-tag status-live"><i class="fa-solid fa-globe"></i> Live on Google Play</span>
                         </div>
                         
@@ -275,11 +285,11 @@
                         </div>
 
                         <p class="project-desc">
-                            Production-grade semantic matching and talent intelligence engine evaluating candidate fitness against complex job descriptions using Pinecone vector embeddings and LLM reasoning.
+                            Production-grade semantic matching and talent intelligence engine evaluating candidate fitness against complex job requisitions using Pinecone vector embeddings and LLM reasoning.
                         </p>
 
                         <div class="project-highlights">
-                            <div class="ph-item"><i class="fa-solid fa-check"></i> Custom <strong>75% semantic / 25% skill-match algorithm</strong> dynamically evaluating talent.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Custom <strong>75% semantic / 25% skill-match algorithm</strong> dynamically evaluating talent fit.</div>
                             <div class="ph-item"><i class="fa-solid fa-check"></i> Automated resume parsing extracting structured JSON entities into PostgreSQL.</div>
                             <div class="ph-item"><i class="fa-solid fa-check"></i> LLaMA 3 inference via Groq generating instant recruiter summaries and candidate insights.</div>
                         </div>
@@ -289,14 +299,14 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://play.google.com/store/apps/details?id=com.tritech.ezstaf" target="_blank" rel="noopener noreferrer" class="btn-playstore" title="Get EzStaf on Google Play Store">
+                            <a href="https://play.google.com/store/apps/details?id=com.tritech.ezstaf" target="_blank" rel="noopener noreferrer" class="btn-playstore magnetic" title="Get EzStaf on Google Play Store">
                                 <i class="fa-brands fa-google-play"></i>
                                 <span>
                                     <small>GET IT ON</small>
                                     <strong>Google Play</strong>
                                 </span>
                             </a>
-                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary" title="View Source Repositories">
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary magnetic" title="View Source Repositories">
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
                         </div>
@@ -304,11 +314,11 @@
                 </article>
 
                 <!-- Project 2: OWEZE -->
-                <article class="premium-card project-card glow-effect" data-category="fullstack automation">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="fullstack automation">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-solid fa-building-columns"></i> Full Stack | Rent Platform</span>
+                            <span class="category-tag highlight-cyan"><i class="fa-solid fa-building-columns"></i> Full Stack | Rent Platform</span>
                             <span class="status-tag status-ongoing"><i class="fa-solid fa-spinner fa-spin-pulse"></i> Active Engineering</span>
                         </div>
                         
@@ -331,18 +341,18 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Architecture Specs</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-circle-info"></i> Architecture Specs</a>
                             <span class="repo-badge"><i class="fa-solid fa-lock"></i> Enterprise Repo</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 3: MCP-Based AI Chatbot Agent -->
-                <article class="premium-card project-card glow-effect" data-category="genai agents">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="genai agents">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-solid fa-robot"></i> AI Agents | Model Context Protocol</span>
+                            <span class="category-tag highlight-pink"><i class="fa-solid fa-robot"></i> AI Agents | Model Context Protocol</span>
                             <span class="status-tag status-production"><i class="fa-solid fa-check-double"></i> Production Deployed</span>
                         </div>
                         
@@ -357,7 +367,7 @@
                         <div class="project-highlights">
                             <div class="ph-item"><i class="fa-solid fa-check"></i> 3-stage execution: intent detection, dynamic tool selection via JSON, and response synthesis.</div>
                             <div class="ph-item"><i class="fa-solid fa-check"></i> Dynamic tool introspection allowing LLMs to safely query relational database models.</div>
-                            <div class="ph-item"><i class="fa-solid fa-check"></i> Ultra low-latency LLM inference orchestrated via Groq API and Gemini Pro.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Low-latency LLM inference orchestrated via Groq API and Gemini Pro.</div>
                         </div>
 
                         <div class="tech-stack">
@@ -365,18 +375,18 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Details</a>
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-circle-info"></i> Details</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 4: WhatsApp CRM & Automation -->
-                <article class="premium-card project-card glow-effect" data-category="automation">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="automation">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-brands fa-whatsapp"></i> CRM & Messaging Automation</span>
+                            <span class="category-tag highlight-cyan"><i class="fa-brands fa-whatsapp"></i> CRM & Messaging Automation</span>
                             <span class="status-tag status-production"><i class="fa-solid fa-check-double"></i> Production Deployed</span>
                         </div>
                         
@@ -399,18 +409,18 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> System Architecture</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-circle-info"></i> System Architecture</a>
                             <span class="repo-badge"><i class="fa-brands fa-whatsapp"></i> Cloud API Solution</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 5: SUKALPA -->
-                <article class="premium-card project-card glow-effect" data-category="fullstack">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="fullstack">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-solid fa-store"></i> E-commerce | Business Suite</span>
+                            <span class="category-tag highlight-violet"><i class="fa-solid fa-store"></i> E-commerce | Business Suite</span>
                             <span class="status-tag status-completed"><i class="fa-solid fa-circle-check"></i> Core Deployed</span>
                         </div>
                         
@@ -433,18 +443,18 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Platform Specs</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-circle-info"></i> Platform Specs</a>
                             <span class="repo-badge"><i class="fa-solid fa-lock"></i> Client Solution</span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 6: Multilingual Voice-to-Resume Generator -->
-                <article class="premium-card project-card glow-effect" data-category="genai automation">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="genai automation">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-solid fa-microphone-lines"></i> Speech AI | Document Gen</span>
+                            <span class="category-tag highlight-pink"><i class="fa-solid fa-microphone-lines"></i> Speech AI | Document Gen</span>
                             <span class="status-tag status-production"><i class="fa-solid fa-check-double"></i> Production Deployed</span>
                         </div>
                         
@@ -467,18 +477,18 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Workflow Specs</a>
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-circle-info"></i> Workflow Specs</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 7: Beyondskillz -->
-                <article class="premium-card project-card glow-effect" data-category="fullstack">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="fullstack">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-solid fa-graduation-cap"></i> Full Stack | EdTech Platform</span>
+                            <span class="category-tag highlight-cyan"><i class="fa-solid fa-graduation-cap"></i> Full Stack | EdTech Platform</span>
                             <span class="status-tag status-production"><i class="fa-solid fa-circle-check"></i> Production Deployed</span>
                         </div>
                         
@@ -501,18 +511,18 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Details</a>
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-circle-info"></i> Details</a>
                         </div>
                     </div>
                 </article>
 
                 <!-- Project 8: AI Outbound Voice Agent -->
-                <article class="premium-card project-card glow-effect" data-category="genai agents">
+                <article class="premium-card project-card glow-effect tilt-card reveal" data-category="genai agents">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="project-meta-top">
-                            <span class="category-tag"><i class="fa-solid fa-headset"></i> Voice AI | Autonomous Agents</span>
+                            <span class="category-tag highlight-violet"><i class="fa-solid fa-headset"></i> Voice AI | Autonomous Agents</span>
                             <span class="status-tag status-planning"><i class="fa-solid fa-compass-drafting"></i> Architecture / R&D</span>
                         </div>
                         
@@ -535,7 +545,7 @@
                         </div>
 
                         <div class="project-actions">
-                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-compass-drafting"></i> Architecture Roadmap</a>
+                            <a href="#contact" class="btn-action-primary magnetic"><i class="fa-solid fa-compass-drafting"></i> Architecture Roadmap</a>
                             <span class="repo-badge"><i class="fa-solid fa-flask"></i> R&D Lab</span>
                         </div>
                     </div>
@@ -543,9 +553,9 @@
             </div>
         </section>
 
-        <!-- Certifications & Credentials Section (Prominently Showcasing Oracle & Microsoft) -->
+        <!-- Certifications & Credentials Section (Highlighting Oracle & Microsoft) -->
         <section id="certifications" class="section">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Verified Industry Credentials</span>
                 <h2 class="section-title">Certifications & <span>Credentials</span></h2>
                 <p class="section-subtitle">Officially validated credentials in Agentic AI, AI database architecture, and advanced LLM systems.</p>
@@ -553,7 +563,7 @@
 
             <div class="certifications-grid">
                 <!-- 1. Oracle Cloud Infrastructure 2026 Certified Agentic AI Foundations Associate (VERIFIED BADGE) -->
-                <div class="premium-card glow-effect cert-card tilt-card featured-cert">
+                <div class="premium-card glow-effect cert-card tilt-card featured-cert reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="cert-card-header">
@@ -569,7 +579,7 @@
                             <p><strong>Competencies:</strong> Autonomous AI Agents, LLM Orchestration, Multi-Agent Tooling, OCI Generative AI</p>
                         </div>
 
-                        <!-- Badge Showcase Visual -->
+                        <!-- Oracle Badge Showcase Visual -->
                         <div class="cert-badge-showcase oracle-badge-box">
                             <div class="badge-icon-wrap">
                                 <i class="fa-solid fa-brain"></i>
@@ -581,7 +591,7 @@
                         </div>
 
                         <div class="cert-card-actions">
-                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=6A0A7236BB6CCD227426747180E8B1865EB54903E8EA1FADAF613F512060FCFB" target="_blank" rel="noopener noreferrer" class="btn-cert-verify oracle-btn">
+                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=6A0A7236BB6CCD227426747180E8B1865EB54903E8EA1FADAF613F512060FCFB" target="_blank" rel="noopener noreferrer" class="btn-cert-verify oracle-btn magnetic">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Official Oracle Badge
                             </a>
                         </div>
@@ -589,7 +599,7 @@
                 </div>
 
                 <!-- 2. Microsoft Certified: SQL AI Developer Associate (VERIFIED with Certificate Image & Link) -->
-                <div class="premium-card glow-effect cert-card tilt-card featured-cert">
+                <div class="premium-card glow-effect cert-card tilt-card featured-cert reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="cert-card-header">
@@ -614,7 +624,7 @@
                         </div>
 
                         <div class="cert-card-actions">
-                            <a href="https://learn.microsoft.com/en-us/users/misalachennakeshava-2386/credentials/certification/developing-ai-enabled-database-solutions?tab=credentials-tab" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                            <a href="https://learn.microsoft.com/en-us/users/misalachennakeshava-2386/credentials/certification/developing-ai-enabled-database-solutions?tab=credentials-tab" target="_blank" rel="noopener noreferrer" class="btn-cert-verify magnetic">
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify on Microsoft Learn
                             </a>
                         </div>
@@ -622,7 +632,7 @@
                 </div>
 
                 <!-- 3. Anthropic – Building with the Claude API -->
-                <div class="premium-card glow-effect cert-card tilt-card">
+                <div class="premium-card glow-effect cert-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="cert-card-header">
@@ -647,7 +657,7 @@
                         </div>
 
                         <div class="cert-card-actions">
-                            <button type="button" class="btn-cert-verify" onclick="openCertModal('certificate.png', 'Building with the Claude API', 'Anthropic', 'Verified Completion', '#')">
+                            <button type="button" class="btn-cert-verify magnetic" onclick="openCertModal('certificate.png', 'Building with the Claude API', 'Anthropic', 'Verified Completion', '#')">
                                 <i class="fa-solid fa-eye"></i> View Credential
                             </button>
                         </div>
@@ -655,7 +665,7 @@
                 </div>
 
                 <!-- 4. HackerRank SQL (Basic) -->
-                <div class="premium-card glow-effect cert-card tilt-card">
+                <div class="premium-card glow-effect cert-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="cert-card-header">
@@ -682,7 +692,7 @@
                         </div>
 
                         <div class="cert-card-actions">
-                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-cert-verify magnetic">
                                 <i class="fa-brands fa-github"></i> View Profile Repositories
                             </a>
                         </div>
@@ -690,7 +700,7 @@
                 </div>
 
                 <!-- 5. LinkedIn Learning – Introduction to Career Skills in Data Analytics -->
-                <div class="premium-card glow-effect cert-card tilt-card">
+                <div class="premium-card glow-effect cert-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="cert-card-header">
@@ -717,7 +727,7 @@
                         </div>
 
                         <div class="cert-card-actions">
-                            <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                            <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="btn-cert-verify magnetic">
                                 <i class="fa-brands fa-linkedin"></i> View on LinkedIn Profile
                             </a>
                         </div>
@@ -726,7 +736,7 @@
             </div>
 
             <!-- Continuous Training Subsection -->
-            <div class="training-subsection">
+            <div class="training-subsection reveal">
                 <div class="training-card premium-card glow-effect">
                     <div class="glow-border"></div>
                     <div class="card-content">
@@ -748,17 +758,23 @@
             </div>
         </section>
 
-        <!-- Professional Experience & Education Section -->
+        <!-- Professional Experience & Education Section (with scroll-drawing timeline) -->
         <section id="experience" class="section">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Career Milestones</span>
                 <h2 class="section-title">Professional <span>Experience</span></h2>
-                <p class="section-subtitle">Production engineering in AI systems, scalable backend architectures, and intelligent automation.</p>
+                <p class="section-subtitle">Production engineering in AI systems, scalable backend architectures, and intelligent business automation.</p>
             </div>
             
-            <div class="experience-timeline">
+            <div class="experience-timeline" id="experienceTimeline">
+                <!-- Vertical Progress Line that draws as user scrolls -->
+                <div class="timeline-line-track">
+                    <div class="timeline-line-fill" id="timelineProgress"></div>
+                </div>
+
                 <!-- Current Experience: Nevonex IT Solutions -->
-                <div class="premium-card glow-effect experience-card current-role">
+                <div class="premium-card glow-effect experience-card current-role tilt-card reveal">
+                    <div class="timeline-node"></div>
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="exp-header">
@@ -818,7 +834,8 @@
                 </div>
 
                 <!-- Academic Background -->
-                <div class="premium-card glow-effect experience-card education-card">
+                <div class="premium-card glow-effect experience-card education-card tilt-card reveal">
+                    <div class="timeline-node education-node"></div>
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="exp-header">
@@ -845,17 +862,87 @@
             </div>
         </section>
 
-        <!-- Technical Skills Section -->
+        <!-- Technical Skills Section (With Animated Proficiency Skill Bars) -->
         <section id="skills" class="section">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Core Technical Stack</span>
                 <h2 class="section-title">Technical <span>Skills</span></h2>
                 <p class="section-subtitle">Structured according to hands-on production expertise, architectures, and engineering familiarity.</p>
             </div>
 
+            <!-- Animated Core Engineering Skill Bars -->
+            <div class="skill-bars-card premium-card glow-effect tilt-card reveal">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <h3 class="skill-bars-title"><i class="fa-solid fa-chart-simple"></i> Core Engineering Mastery</h3>
+                    <div class="skill-bars-grid">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Generative AI, RAG & LLM Agents</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-progress="95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Python & FastAPI Asynchronous Backends</span>
+                                <span class="skill-pct">96%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-progress="96%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Model Context Protocol (MCP) Architecture</span>
+                                <span class="skill-pct">92%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-progress="92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>PostgreSQL & Pinecone Vector Search</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-progress="90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>n8n Workflows & Meta WhatsApp Cloud API</span>
+                                <span class="skill-pct">94%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-progress="94%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span>Docker Containerization & AWS EC2</span>
+                                <span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-track">
+                                <div class="skill-fill" data-progress="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categorized Technical Competencies Grid -->
             <div class="skills-categorized-grid">
                 <!-- 1. Generative AI & LLMs -->
-                <div class="premium-card skill-group-card glow-effect">
+                <div class="premium-card skill-group-card glow-effect tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="skill-group-header">
@@ -873,7 +960,7 @@
                 </div>
 
                 <!-- 2. Backend Engineering -->
-                <div class="premium-card skill-group-card glow-effect">
+                <div class="premium-card skill-group-card glow-effect tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="skill-group-header">
@@ -891,7 +978,7 @@
                 </div>
 
                 <!-- 3. Databases & Vector Search -->
-                <div class="premium-card skill-group-card glow-effect">
+                <div class="premium-card skill-group-card glow-effect tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="skill-group-header">
@@ -909,7 +996,7 @@
                 </div>
 
                 <!-- 4. Automation & Integrations -->
-                <div class="premium-card skill-group-card glow-effect">
+                <div class="premium-card skill-group-card glow-effect tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="skill-group-header">
@@ -927,7 +1014,7 @@
                 </div>
 
                 <!-- 5. Cloud & DevOps -->
-                <div class="premium-card skill-group-card glow-effect">
+                <div class="premium-card skill-group-card glow-effect tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="skill-group-header">
@@ -945,7 +1032,7 @@
                 </div>
 
                 <!-- 6. Frontend & Mobile -->
-                <div class="premium-card skill-group-card glow-effect">
+                <div class="premium-card skill-group-card glow-effect tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="skill-group-header">
@@ -966,7 +1053,7 @@
 
         <!-- Key Achievements Section -->
         <section id="achievements" class="section">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Recognitions & Impact</span>
                 <h2 class="section-title">Key <span>Achievements</span></h2>
                 <p class="section-subtitle">Tangible impact delivered across production software, automation, and enterprise solutions.</p>
@@ -974,7 +1061,7 @@
 
             <div class="achievements-grid">
                 <!-- Achievement 1: EzStaf Google Play Launch -->
-                <div class="premium-card glow-effect achievement-card">
+                <div class="premium-card glow-effect achievement-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="achieve-badge"><i class="fa-brands fa-google-play"></i> Mobile Deployment</div>
@@ -986,7 +1073,7 @@
                 </div>
 
                 <!-- Achievement 2: WhatsApp CRM & Rent Automation -->
-                <div class="premium-card glow-effect achievement-card">
+                <div class="premium-card glow-effect achievement-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="achieve-badge"><i class="fa-brands fa-whatsapp"></i> Communication Pipeline</div>
@@ -998,7 +1085,7 @@
                 </div>
 
                 <!-- Achievement 3: Business Automation Engine -->
-                <div class="premium-card glow-effect achievement-card">
+                <div class="premium-card glow-effect achievement-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="achieve-badge"><i class="fa-solid fa-bolt"></i> Workflow Orchestration</div>
@@ -1010,7 +1097,7 @@
                 </div>
 
                 <!-- Achievement 4: Stafi Solution Web Launch -->
-                <div class="premium-card glow-effect achievement-card">
+                <div class="premium-card glow-effect achievement-card tilt-card reveal">
                     <div class="glow-border"></div>
                     <div class="card-content">
                         <div class="achieve-badge"><i class="fa-solid fa-globe"></i> Enterprise Presence</div>
@@ -1025,7 +1112,7 @@
 
         <!-- Contact & Opportunities Section -->
         <section id="contact" class="section">
-            <div class="premium-card glow-effect contact-card">
+            <div class="premium-card glow-effect contact-card tilt-card reveal">
                 <div class="glow-border"></div>
                 <div class="card-content">
                     <div class="status-badge" style="margin: 0 auto 1.5rem auto;">
@@ -1035,12 +1122,12 @@
                     <h2 class="section-title">Let's <span>Connect & Build</span></h2>
                     
                     <p class="contact-pitch">
-                        I am currently available for <strong>full-time AI Engineering roles</strong>, Python backend development, intelligent automation consulting, and freelance contract engagements. Whether you need a production RAG system, an autonomous AI agent, or custom WhatsApp CRM automation, let's discuss your next milestone.
+                        I am currently available for <strong>full-time AI Engineering roles</strong>, Python backend development, intelligent automation consulting, and contract engagements. Whether you need a production RAG system, an autonomous AI agent, or custom WhatsApp CRM automation, let's discuss your next milestone.
                     </p>
 
                     <div class="contact-grid">
                         <!-- Email -->
-                        <a href="mailto:chennamisala9@gmail.com" class="contact-btn">
+                        <a href="mailto:chennamisala9@gmail.com" class="contact-btn magnetic">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                             <div class="btn-text">
                                 <small>Email Me</small>
@@ -1049,7 +1136,7 @@
                         </a>
 
                         <!-- Direct WhatsApp -->
-                        <a href="https://wa.me/918985928195?text=Hi%20Chennakeshava,%20I%20would%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="contact-btn contact-whatsapp">
+                        <a href="https://wa.me/918985928195?text=Hi%20Chennakeshava,%20I%20would%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="contact-btn contact-whatsapp magnetic">
                             <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
                             <div class="btn-text">
                                 <small>Chat on WhatsApp</small>
@@ -1058,7 +1145,7 @@
                         </a>
 
                         <!-- Phone -->
-                        <a href="tel:+918985928195" class="contact-btn">
+                        <a href="tel:+918985928195" class="contact-btn magnetic">
                             <span class="icon"><i class="fa-solid fa-phone"></i></span>
                             <div class="btn-text">
                                 <small>Call Direct</small>
@@ -1067,7 +1154,7 @@
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                        <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="contact-btn magnetic">
                             <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
                             <div class="btn-text">
                                 <small>Connect on LinkedIn</small>
@@ -1076,7 +1163,7 @@
                         </a>
 
                         <!-- GitHub -->
-                        <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                        <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="contact-btn magnetic">
                             <span class="icon"><i class="fa-brands fa-github"></i></span>
                             <div class="btn-text">
                                 <small>GitHub Repositories</small>
@@ -1122,6 +1209,11 @@
         </div>
     </footer>
 
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <!-- Universal Certificate Modal Viewer -->
     <div id="certModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
         <div class="modal-box">
@@ -1132,7 +1224,7 @@
                     <h3 id="modalCertTitle">Certificate Name</h3>
                     <p id="modalCertIssuer">Issuer: Microsoft</p>
                     <p id="modalCertID">Credential ID: <code>B32BB12428F1AB64</code></p>
-                    <a id="modalCertLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-sm">
+                    <a id="modalCertLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-sm magnetic">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Official Credential
                     </a>
                 </div>
