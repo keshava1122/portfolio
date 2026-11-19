@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misala Chennakeshava | AI Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Chennakeshava Misala | AI Engineer & Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Chennakeshava Misala - AI Engineer, Generative AI Developer, Python Full Stack Developer, and AI Automation Engineer building LLM pipelines, RAG systems, MCP architectures, and scalable backends.">
+    <meta name="keywords" content="Chennakeshava Misala, AI Engineer, Generative AI, RAG, MCP, FastAPI, Python, n8n, WhatsApp Cloud API, EzStaf, Oweze, Sukalpa, Machine Learning, Hyderabad, Oracle Certified Agentic AI">
+    <meta name="author" content="Chennakeshava Misala">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Chennakeshava Misala | AI Engineer & Full Stack Developer">
+    <meta property="og:description" content="AI Engineer specializing in Generative AI, LLM Integration, RAG, MCP, FastAPI, and Business Automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keshava1122.github.io/portfolio/">
+    <meta property="og:image" content="profile.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chennakeshava Misala | AI Engineer">
+    <meta name="twitter:description" content="AI Engineer specializing in Generative AI, LLM Integration, RAG, MCP, FastAPI, and Business Automation.">
+    <meta name="twitter:image" content="profile.png">
+
+    <link rel="icon" type="image/png" href="profile.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Custom Cursor -->
@@ -17,289 +43,1104 @@
     <div class="bg-container">
         <div class="ambient-glow glow-1"></div>
         <div class="ambient-glow glow-2"></div>
+        <div class="ambient-glow glow-3"></div>
+        <div class="grid-overlay"></div>
         <div class="noise-overlay"></div>
     </div>
 
-    <nav class="navbar">
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="main-nav">
         <div class="nav-content">
-            <!-- Removed Logo as requested -->
+            <a href="#home" class="logo" aria-label="Home">
+                CK<span>.AI</span>
+            </a>
+
+            <!-- Desktop Links -->
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Experience</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="btn-primary-sm">Let's Talk</a>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-primary-sm">Let's Talk</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-links">
+                <li><a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-code"></i> Projects</a></li>
+                <li><a href="#certifications" class="mobile-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+                <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+                <li><a href="#achievements" class="mobile-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+                <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="status-badge">
-                    <span class="pulse-dot"></span> Available for Hire
+    <main>
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span> Available for AI Engineering & Full-Stack Roles
+                    </div>
+                    
+                    <h1 class="name">Chennakeshava Misala</h1>
+                    
+                    <div class="title-tags">
+                        <span class="title-badge highlight">AI Engineer</span>
+                        <span class="title-badge">Generative AI Specialist</span>
+                        <span class="title-badge">Python Full Stack Developer</span>
+                        <span class="title-badge">AI Automation Architect</span>
+                    </div>
+
+                    <div class="typing-container">
+                        <span class="static-text">I architect & build</span>
+                        <span class="typed-text"></span><span class="cursor">|</span>
+                    </div>
+
+                    <p class="summary">
+                        AI Engineer with <strong>1.5+ years of experience</strong> engineering production LLM applications, RAG systems, Model Context Protocol (MCP) servers, scalable FastAPI backends, and automated enterprise pipelines. Certified in <strong>Oracle Agentic AI</strong> and <strong>Microsoft SQL AI Development</strong>.
+                    </p>
+
+                    <!-- Quick Metric Strip -->
+                    <div class="hero-stats-strip">
+                        <div class="stat-card">
+                            <span class="stat-num">1.5+</span>
+                            <span class="stat-label">Years AI & Backend</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">8+</span>
+                            <span class="stat-label">Production AI Systems</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">2</span>
+                            <span class="stat-label">Global AI Certifications</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Production Uptime</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> Explore Projects</a>
+                        <a href="#certifications" class="btn-secondary"><i class="fa-solid fa-award"></i> View Certifications</a>
+                        <a href="https://wa.me/918985928195?text=Hi%20Chennakeshava,%20I%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener noreferrer" class="btn-whatsapp" title="Chat on WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="social-quick-links">
+                        <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon-btn" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon-btn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:chennamisala9@gmail.com" aria-label="Email Me" class="social-icon-btn" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+918985928195" aria-label="Call Me" class="social-icon-btn" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
                 </div>
-                <h1 class="name">Misala Chennakeshava</h1>
-                <div class="typing-container">
-                    <span class="static-text">I build</span>
-                    <span class="typed-text"></span><span class="cursor">|</span>
+
+                <div class="hero-visual">
+                    <div class="ring ring-1"></div>
+                    <div class="ring ring-2"></div>
+                    <div class="ring ring-3"></div>
+                    
+                    <div class="profile-container tilt-card">
+                        <!-- Fallback initials MC -->
+                        <div class="profile-placeholder" id="profile-fallback">CM</div>
+                        <!-- Profile Image -->
+                        <img src="profile.png" alt="Chennakeshava Misala" class="profile-img" onload="document.getElementById('profile-fallback').style.display='none'" onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex'">
+                    </div>
+                    
+                    <!-- Floating Tech Badges -->
+                    <div class="float-badge fb-1 glass-card">
+                        <div class="fb-icon">🧠</div>
+                        <div class="fb-text">
+                            <span>Specialization</span>
+                            <strong>Agentic AI & RAG</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="float-badge fb-2 glass-card">
+                        <div class="fb-icon">⚡</div>
+                        <div class="fb-text">
+                            <span>Backend Systems</span>
+                            <strong>FastAPI & Python</strong>
+                        </div>
+                    </div>
+
+                    <div class="float-badge fb-3 glass-card">
+                        <div class="fb-icon">🤖</div>
+                        <div class="fb-text">
+                            <span>Protocol Architecture</span>
+                            <strong>MCP & AI Agents</strong>
+                        </div>
+                    </div>
                 </div>
-                <p class="summary">
-                    AI Engineer with hands-on experience designing and deploying production-grade AI systems integrating LLMs, workflow automation, and scalable backend architectures. Focused on developing reliable, end-to-end AI platforms including resume parsing engines, conversational AI, and analytics automation.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn-primary">View Projects</a>
-                    <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </header>
+
+        <!-- Tech Stack Infinite Marquee -->
+        <section id="skills-marquee" class="skills-marquee-section" aria-label="Technical Stack Marquee">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="skill-pill highlight"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-bolt"></i> FastAPI</div>
+                    <div class="skill-pill"><i class="fa-solid fa-brain"></i> Generative AI & LLMs</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-network-wired"></i> RAG Architecture</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-diagram-project"></i> MCP Protocol</div>
+                    <div class="skill-pill"><i class="fa-solid fa-robot"></i> AI Agents & LangGraph</div>
+                    <div class="skill-pill">Gemini Pro & Mistral AI</div>
+                    <div class="skill-pill">LLaMA 3 & Groq</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-database"></i> PostgreSQL & SQLAlchemy</div>
+                    <div class="skill-pill"><i class="fa-solid fa-microchip"></i> Pinecone Vector DB</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-gears"></i> n8n Automation</div>
+                    <div class="skill-pill"><i class="fa-brands fa-whatsapp"></i> Meta WhatsApp Cloud API</div>
+                    <div class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & AWS EC2</div>
+                    <div class="skill-pill"><i class="fa-brands fa-react"></i> React.js & Vite</div>
+                    <div class="skill-pill">Flutter Mobile</div>
+                    <div class="skill-pill">Whisper Speech-to-Text</div>
+                    <div class="skill-pill">Sentence Transformers</div>
+
+                    <!-- Duplicate for seamless infinite scroll -->
+                    <div class="skill-pill highlight"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-bolt"></i> FastAPI</div>
+                    <div class="skill-pill"><i class="fa-solid fa-brain"></i> Generative AI & LLMs</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-network-wired"></i> RAG Architecture</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-diagram-project"></i> MCP Protocol</div>
+                    <div class="skill-pill"><i class="fa-solid fa-robot"></i> AI Agents & LangGraph</div>
+                    <div class="skill-pill">Gemini Pro & Mistral AI</div>
+                    <div class="skill-pill">LLaMA 3 & Groq</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-database"></i> PostgreSQL & SQLAlchemy</div>
+                    <div class="skill-pill"><i class="fa-solid fa-microchip"></i> Pinecone Vector DB</div>
+                    <div class="skill-pill highlight"><i class="fa-solid fa-gears"></i> n8n Automation</div>
+                    <div class="skill-pill"><i class="fa-brands fa-whatsapp"></i> Meta WhatsApp Cloud API</div>
+                    <div class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & AWS EC2</div>
+                    <div class="skill-pill"><i class="fa-brands fa-react"></i> React.js & Vite</div>
+                    <div class="skill-pill">Flutter Mobile</div>
+                    <div class="skill-pill">Whisper Speech-to-Text</div>
+                    <div class="skill-pill">Sentence Transformers</div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-tag">Production Engineering</span>
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <p class="section-subtitle">Battle-tested architectures in Generative AI, RAG pipelines, autonomous agents, and full-stack systems.</p>
+            </div>
+
+            <!-- Project Category Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects <span class="filter-count">(8)</span></button>
+                <button class="filter-btn" data-filter="genai">Generative AI & RAG</button>
+                <button class="filter-btn" data-filter="agents">AI Agents & MCP</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack Backends</button>
+                <button class="filter-btn" data-filter="automation">Automation & CRM</button>
             </div>
             
-            <div class="hero-visual">
-                <div class="ring ring-1"></div>
-                <div class="ring ring-2"></div>
-                
-                <div class="profile-container tilt-card">
-                    <!-- The fallback circle with initials MC -->
-                    <div class="profile-placeholder" id="profile-fallback">MC</div>
-                    <!-- The actual image tag looking for profile.png -->
-                    <img src="profile.png" alt="Profile" class="profile-img" onload="document.getElementById('profile-fallback').style.display='none'" onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex'">
-                </div>
-                
-                <div class="float-badge fb-1 glass-card">
-                    <div class="fb-icon">🧠</div>
-                    <div class="fb-text">
-                        <span>Expertise</span>
-                        <strong>LLMs & RAG</strong>
-                    </div>
-                </div>
-                <div class="float-badge fb-2 glass-card">
-                    <div class="fb-icon">⚡</div>
-                    <div class="fb-text">
-                        <span>Backend</span>
-                        <strong>FastAPI & Python</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="skills" class="skills-marquee-section">
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <!-- Full tech stack array -->
-                <div class="skill-pill highlight">Python</div>
-                <div class="skill-pill highlight">FastAPI</div>
-                <div class="skill-pill">Gemini Pro & Mistral AI</div>
-                <div class="skill-pill">LLaMA 3 (Groq API)</div>
-                <div class="skill-pill highlight">RAG Architecture</div>
-                <div class="skill-pill">Langchain</div>
-                <div class="skill-pill">Prompt Engineering</div>
-                <div class="skill-pill">Semantic Search</div>
-                <div class="skill-pill highlight">n8n Automation</div>
-                <div class="skill-pill">MCP Server Architecture</div>
-                <div class="skill-pill highlight">PostgreSQL & MySQL</div>
-                <div class="skill-pill">Pinecone (Vector DB)</div>
-                <div class="skill-pill">Sentence Transformers</div>
-                <div class="skill-pill">Web Scraping & Google Sheets API</div>
-                
-                <!-- Duplicate for infinite scroll -->
-                <div class="skill-pill highlight">Python</div>
-                <div class="skill-pill highlight">FastAPI</div>
-                <div class="skill-pill">Gemini Pro & Mistral AI</div>
-                <div class="skill-pill">LLaMA 3 (Groq API)</div>
-                <div class="skill-pill highlight">RAG Architecture</div>
-                <div class="skill-pill">Langchain</div>
-                <div class="skill-pill">Prompt Engineering</div>
-                <div class="skill-pill">Semantic Search</div>
-                <div class="skill-pill highlight">n8n Automation</div>
-                <div class="skill-pill">MCP Server Architecture</div>
-                <div class="skill-pill highlight">PostgreSQL & MySQL</div>
-                <div class="skill-pill">Pinecone (Vector DB)</div>
-                <div class="skill-pill">Sentence Transformers</div>
-                <div class="skill-pill">Web Scraping & Google Sheets API</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Work <span>Experience</span></h2>
-            <p class="section-subtitle">Professional journey and academic background.</p>
-        </div>
-        
-        <div class="split-content" style="grid-template-columns: 1fr;">
-            <!-- Experience -->
-            <div class="premium-card glow-effect experience-card" style="margin-bottom: 2rem;">
-                <div class="glow-border"></div>
-                <div class="card-content">
-                    <div class="exp-header">
-                        <span class="exp-date">Aug 2025 - Present</span>
-                        <span class="exp-company">TriTech</span>
-                    </div>
-                    <h3 style="margin-bottom: 0.5rem;">AI Engineer</h3>
-                    <p style="color: var(--text-muted); margin-top: 1rem; line-height: 1.8;">
-                        Leading the architectural design and deployment of production-grade AI platforms. I specialize in building scalable FastAPI backends and integrating advanced Large Language Models (Gemini, Mistral) to automate complex recruitment workflows. My role involves transforming traditional HR processes into intelligent, automated systems.
-                    </p>
-                    <div style="margin-top: 1.5rem; display: grid; gap: 1rem;">
-                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: #fff;">Workflow Orchestration:</strong> Engineered n8n pipelines that connect LLMs, OCR, and Speech-to-Text APIs to fully automate document processing and candidate communication.
-                        </div>
-                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent-glow);">
-                            <strong style="color: #fff;">Intelligent Systems:</strong> Developed custom HR chatbots capable of context-aware responses, backed by real-time monitoring and error-notification architectures.
-                        </div>
-                        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent);">
-                            <strong style="color: #fff;">Advanced Retrieval:</strong> Currently implementing RAG architectures and vector database integrations to power embedding-based search for massive datasets.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Academics -->
-            <div class="premium-card glow-effect experience-card">
-                <div class="glow-border"></div>
-                <div class="card-content">
-                    <div class="exp-header">
-                        <span class="exp-date">Sept 2020 – May 2024</span>
-                        <span class="exp-company">JNTU-Anantapur</span>
-                    </div>
-                    <h3>Artificial Intelligence and Data Science</h3>
-                    <p>Academic profile and foundational degree building core expertise in AI, ML, and Data Science methodologies.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Selected <span>Projects</span></h2>
-            <p class="section-subtitle">Deep dive into my core implementations.</p>
-        </div>
-        
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="premium-card project-card glow-effect">
-                <div class="glow-border"></div>
-                <div class="card-content">
-                    <div class="project-header">
-                        <h3>AI-Powered Talent Matching Platform</h3>
-                    </div>
-                    <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">
-                        A highly scalable semantic matching engine designed to evaluate candidate fitness against complex job descriptions. By integrating Pinecone vector search with a custom <strong>75% semantic / 25% skill-match algorithm</strong>, this system dynamically filters and ranks talent based on precise constraints like location. The pipeline leverages a two-stage retrieval process and uses LLaMA 3 via Groq to generate actionable, contextual candidate summaries for recruiters.
-                    </p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Pinecone</span><span>SentenceTransformers</span><span>LLaMA 3</span><span>NLP</span><span>Vector Search</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="premium-card project-card glow-effect">
-                <div class="glow-border"></div>
-                <div class="card-content">
-                    <div class="project-header">
-                        <h3>Multilingual Voice-to-Resume Generator</h3>
-                    </div>
-                    <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">
-                        An innovative AI system that converts spoken user input into professionally formatted resumes and cover letters. I engineered a robust preprocessing layer capable of noise removal and multilingual translation. Using a hybrid extraction approach, the system combines strict regex anchors with LLM-based role inference (Gemini/Mistral) to intelligently auto-translate and structure raw speech into perfect resume templates via n8n automation.
-                    </p>
-                    <div class="tech-stack">
-                        <span>Gemini/Mistral</span><span>Speech-to-Text</span><span>Translation APIs</span><span>Prompt Engineering</span><span>n8n</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="premium-card project-card glow-effect">
-                <div class="glow-border"></div>
-                <div class="card-content">
-                    <div class="project-header">
-                        <h3>AI Chatbot Agent with MCP Server</h3>
-                    </div>
-                    <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; flex: 1;">
-                        A multi-turn conversational AI capable of interacting securely with backend databases using a custom Model Context Protocol (MCP) tool-calling architecture. The system executes a strict 3-stage handshake—intent detection, dynamic tool selection via JSON, and response summarization. By integrating Python handlers with SQLAlchemy and PostgreSQL, the chatbot transforms raw database outputs into natural, user-friendly dialogue.
-                    </p>
-                    <div class="tech-stack">
-                        <span>FastAPI</span><span>Groq</span><span>MCP Architecture</span><span>SQLAlchemy</span><span>PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="achievements" class="section split-section">
-        <div class="split-content">
-            <div class="split-left">
-                <h2 class="section-title">Key <span>Achievements</span></h2>
-                <div class="premium-card glow-effect experience-card">
+            <div class="projects-grid" id="projects-container">
+                <!-- Project 1: EzStaf (Featured with Play Store) -->
+                <article class="premium-card project-card glow-effect featured-project" data-category="genai agents fullstack">
                     <div class="glow-border"></div>
                     <div class="card-content">
-                        <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
-                            Beyond my core engineering roles, I take pride in independently driving initiatives that deliver tangible business value through automation and web development.
+                        <div class="project-meta-top">
+                            <span class="category-tag highlight"><i class="fa-solid fa-brain"></i> GenAI | Recruitment Tech</span>
+                            <span class="status-tag status-live"><i class="fa-solid fa-globe"></i> Live on Google Play</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>EzStaf – AI Recruitment & Talent Matching Platform</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            Production-grade semantic matching and talent intelligence engine evaluating candidate fitness against complex job descriptions using Pinecone vector embeddings and LLM reasoning.
                         </p>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px;">
-                                <strong style="color: var(--accent); font-size: 1.1rem; display: block; margin-bottom: 0.3rem;">Business Automation</strong>
-                                <span style="color: var(--text-muted); font-size: 0.95rem;">Designed end-to-end n8n workflows that automate candidate communication and resume parsing, significantly reducing manual HR overhead.</span>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Custom <strong>75% semantic / 25% skill-match algorithm</strong> dynamically evaluating talent.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Automated resume parsing extracting structured JSON entities into PostgreSQL.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> LLaMA 3 inference via Groq generating instant recruiter summaries and candidate insights.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Pinecone</span><span>RAG</span><span>LLaMA 3</span><span>Groq</span><span>MCP</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.tritech.ezstaf" target="_blank" rel="noopener noreferrer" class="btn-playstore" title="Get EzStaf on Google Play Store">
+                                <i class="fa-brands fa-google-play"></i>
+                                <span>
+                                    <small>GET IT ON</small>
+                                    <strong>Google Play</strong>
+                                </span>
+                            </a>
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary" title="View Source Repositories">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: OWEZE -->
+                <article class="premium-card project-card glow-effect" data-category="fullstack automation">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-solid fa-building-columns"></i> Full Stack | Rent Platform</span>
+                            <span class="status-tag status-ongoing"><i class="fa-solid fa-spinner fa-spin-pulse"></i> Active Engineering</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>OWEZE – AI-Powered Rent Management Platform</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            A comprehensive multi-tenant rent and property management platform featuring automated ledger scheduling, receipt verification, and an AI financial assistant.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Automated rent reminder workflows engineered via Meta WhatsApp Cloud API.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Custom MCP tool calling connecting LLMs directly with transactional lease databases.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Asynchronous REST API developed with FastAPI, SQLAlchemy ORM, and Alembic migrations.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Alembic</span><span>Flutter</span><span>AWS EC2</span><span>WhatsApp API</span><span>MCP</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Architecture Specs</a>
+                            <span class="repo-badge"><i class="fa-solid fa-lock"></i> Enterprise Repo</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: MCP-Based AI Chatbot Agent -->
+                <article class="premium-card project-card glow-effect" data-category="genai agents">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-solid fa-robot"></i> AI Agents | Model Context Protocol</span>
+                            <span class="status-tag status-production"><i class="fa-solid fa-check-double"></i> Production Deployed</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>AI Chatbot Agent with MCP Server Architecture</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            A multi-turn conversational AI system capable of interacting securely with backend databases using a custom Model Context Protocol (MCP) tool-calling architecture.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> 3-stage execution: intent detection, dynamic tool selection via JSON, and response synthesis.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Dynamic tool introspection allowing LLMs to safely query relational database models.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Ultra low-latency LLM inference orchestrated via Groq API and Gemini Pro.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>FastAPI</span><span>Groq</span><span>Gemini</span><span>MCP Architecture</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>JSON Schema</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: WhatsApp CRM & Automation -->
+                <article class="premium-card project-card glow-effect" data-category="automation">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-brands fa-whatsapp"></i> CRM & Messaging Automation</span>
+                            <span class="status-tag status-production"><i class="fa-solid fa-check-double"></i> Production Deployed</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>WhatsApp CRM & Automation Platform</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            Enterprise communication automation system leveraging Meta WhatsApp Cloud API to manage high-volume customer inquiries, marketing broadcasts, and event-driven records.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Direct Meta WhatsApp Business Cloud API integration with webhook listeners.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Official WhatsApp template messaging with automated parameter injection.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> High-throughput webhook event processing with failure retry logic in PostgreSQL.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>WhatsApp Cloud API</span><span>Webhooks</span><span>Docker</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> System Architecture</a>
+                            <span class="repo-badge"><i class="fa-brands fa-whatsapp"></i> Cloud API Solution</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: SUKALPA -->
+                <article class="premium-card project-card glow-effect" data-category="fullstack">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-solid fa-store"></i> E-commerce | Business Suite</span>
+                            <span class="status-tag status-completed"><i class="fa-solid fa-circle-check"></i> Core Deployed</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>SUKALPA – E-commerce & Business Management Platform</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            End-to-end e-commerce and enterprise business management suite featuring a dynamic product configurator, order tracking, multi-tenant invoicing, and administrative oversight.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Interactive product builder supporting custom attributes and dynamic pricing.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Order Management System (OMS) with invoice automation and status tracking.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Scalable FastAPI backend integrated with PostgreSQL and containerized via Docker.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Flutter</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>AWS EC2</span><span>Nginx</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Platform Specs</a>
+                            <span class="repo-badge"><i class="fa-solid fa-lock"></i> Client Solution</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Multilingual Voice-to-Resume Generator -->
+                <article class="premium-card project-card glow-effect" data-category="genai automation">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-solid fa-microphone-lines"></i> Speech AI | Document Gen</span>
+                            <span class="status-tag status-production"><i class="fa-solid fa-check-double"></i> Production Deployed</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>Multilingual Voice-to-Resume Generator</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            An innovative AI system converting spoken audio across multiple languages into professionally formatted, ATS-friendly resumes and tailored cover letters.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Multilingual speech-to-text transcription powered by OpenAI Whisper and translation APIs.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Hybrid extraction combining regex anchors with LLM-based role inference (Gemini / Mistral).</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> End-to-end resume document formatting automated via custom n8n workflows.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span><span>Whisper</span><span>Gemini</span><span>Mistral</span><span>FastAPI</span><span>n8n</span><span>NLP</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Workflow Specs</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: Beyondskillz -->
+                <article class="premium-card project-card glow-effect" data-category="fullstack">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-solid fa-graduation-cap"></i> Full Stack | EdTech Platform</span>
+                            <span class="status-tag status-production"><i class="fa-solid fa-circle-check"></i> Production Deployed</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>Beyondskillz – Language Learning Platform</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            A modern web-based language learning platform providing interactive lessons, learner progress analytics, authentication workflows, and administrator management tooling.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Responsive frontend architecture built with React and Vite for sub-second page loads.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Secure FastAPI REST backend handling user authentication and role management.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> PostgreSQL database modeling with schema migration lifecycles via Alembic.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Alembic</span><span>React.js</span><span>Vite</span><span>WhatsApp API</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-action-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-circle-info"></i> Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8: AI Outbound Voice Agent -->
+                <article class="premium-card project-card glow-effect" data-category="genai agents">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="project-meta-top">
+                            <span class="category-tag"><i class="fa-solid fa-headset"></i> Voice AI | Autonomous Agents</span>
+                            <span class="status-tag status-planning"><i class="fa-solid fa-compass-drafting"></i> Architecture / R&D</span>
+                        </div>
+                        
+                        <div class="project-header">
+                            <h3>AI Outbound Voice Agent</h3>
+                        </div>
+
+                        <p class="project-desc">
+                            Conversational voice agent architecture engineered for autonomous outbound calling, intelligent lead qualification, appointment booking, and CRM record synchronization.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Low-latency bidirectional audio streaming combining STT, LLM inference, and TTS.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Natural-sounding voice synthesis with dynamic conversational interruption handling.</div>
+                            <div class="ph-item"><i class="fa-solid fa-check"></i> Telephony API integration (Twilio / WebRTC) with automated CRM contact updating.</div>
+                        </div>
+
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>LLMs</span><span>Speech-to-Text</span><span>Text-to-Speech</span><span>WebRTC</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#contact" class="btn-action-primary"><i class="fa-solid fa-compass-drafting"></i> Architecture Roadmap</a>
+                            <span class="repo-badge"><i class="fa-solid fa-flask"></i> R&D Lab</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications & Credentials Section (Prominently Showcasing Oracle & Microsoft) -->
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <span class="section-tag">Verified Industry Credentials</span>
+                <h2 class="section-title">Certifications & <span>Credentials</span></h2>
+                <p class="section-subtitle">Officially validated credentials in Agentic AI, AI database architecture, and advanced LLM systems.</p>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- 1. Oracle Cloud Infrastructure 2026 Certified Agentic AI Foundations Associate (VERIFIED BADGE) -->
+                <div class="premium-card glow-effect cert-card tilt-card featured-cert">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="cert-card-header">
+                            <span class="cert-issuer-badge oracle"><i class="fa-solid fa-cloud"></i> Oracle</span>
+                            <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Official Badge Verified</span>
+                        </div>
+                        
+                        <h3 class="cert-title">Oracle Cloud Infrastructure 2026 Certified Agentic AI Foundations Associate</h3>
+                        
+                        <div class="cert-meta-info">
+                            <p><strong>Issuing Org:</strong> Oracle University / Oracle Cloud</p>
+                            <p><strong>Credential:</strong> Agentic AI Certified Foundations Associate</p>
+                            <p><strong>Competencies:</strong> Autonomous AI Agents, LLM Orchestration, Multi-Agent Tooling, OCI Generative AI</p>
+                        </div>
+
+                        <!-- Badge Showcase Visual -->
+                        <div class="cert-badge-showcase oracle-badge-box">
+                            <div class="badge-icon-wrap">
+                                <i class="fa-solid fa-brain"></i>
                             </div>
-                            <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 8px;">
-                                <strong style="color: var(--accent-glow); font-size: 1.1rem; display: block; margin-bottom: 0.3rem;">Digital Presence</strong>
-                                <span style="color: var(--text-muted); font-size: 0.95rem;">Architected and launched the official company website for <strong>Stafi Solution</strong>, establishing their core digital presence and operational foundation.</span>
+                            <div class="badge-text-wrap">
+                                <strong>Oracle Certified Associate</strong>
+                                <span>Agentic AI Foundations (2026)</span>
                             </div>
+                        </div>
+
+                        <div class="cert-card-actions">
+                            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=6A0A7236BB6CCD227426747180E8B1865EB54903E8EA1FADAF613F512060FCFB" target="_blank" rel="noopener noreferrer" class="btn-cert-verify oracle-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Official Oracle Badge
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="split-right">
-                <h2 class="section-title">Licenses & <span>Certs</span></h2>
+
+                <!-- 2. Microsoft Certified: SQL AI Developer Associate (VERIFIED with Certificate Image & Link) -->
+                <div class="premium-card glow-effect cert-card tilt-card featured-cert">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="cert-card-header">
+                            <span class="cert-issuer-badge microsoft"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                            <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Online Verifiable</span>
+                        </div>
+                        
+                        <h3 class="cert-title">Microsoft Certified: SQL AI Developer Associate</h3>
+                        
+                        <div class="cert-meta-info">
+                            <p><strong>Credential ID:</strong> <code>B32BB12428F1AB64</code></p>
+                            <p><strong>Cert Number:</strong> <code>22FEM0-6EB40B</code></p>
+                            <p><strong>Issued:</strong> November 13, 2026 · Valid until 2027</p>
+                        </div>
+
+                        <!-- Clickable Image Preview -->
+                        <div class="cert-img-wrapper" onclick="openCertModal('microsoft_cert.png', 'Microsoft Certified: SQL AI Developer Associate', 'Microsoft', 'B32BB12428F1AB64', 'https://learn.microsoft.com/en-us/users/misalachennakeshava-2386/credentials/certification/developing-ai-enabled-database-solutions?tab=credentials-tab')">
+                            <img src="microsoft_cert.png" alt="Microsoft Certified: SQL AI Developer Associate Certificate" class="cert-img">
+                            <div class="cert-zoom-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Certificate
+                            </div>
+                        </div>
+
+                        <div class="cert-card-actions">
+                            <a href="https://learn.microsoft.com/en-us/users/misalachennakeshava-2386/credentials/certification/developing-ai-enabled-database-solutions?tab=credentials-tab" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify on Microsoft Learn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Anthropic – Building with the Claude API -->
                 <div class="premium-card glow-effect cert-card tilt-card">
                     <div class="glow-border"></div>
                     <div class="card-content">
-                        <h3>Claude with the Anthropic API</h3>
-                        <p class="cert-issuer">Anthropic</p>
-                        <div class="cert-img-wrapper" style="cursor: pointer;" onclick="document.getElementById('certModal').style.display='flex'; document.getElementById('modalImg').src=this.querySelector('img').src;">
-                            <img src="certificate.png" alt="Certificate" class="cert-img" onerror="this.style.display='none'">
+                        <div class="cert-card-header">
+                            <span class="cert-issuer-badge anthropic"><i class="fa-solid fa-microchip"></i> Anthropic</span>
+                            <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Course Completion</span>
                         </div>
-                        <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 1rem;">Click to view full screen</p>
+                        
+                        <h3 class="cert-title">Building with the Claude API</h3>
+                        
+                        <div class="cert-meta-info">
+                            <p><strong>Issuing Org:</strong> Anthropic</p>
+                            <p><strong>Topic:</strong> Claude API, Tool Calling & Prompt Engineering</p>
+                            <p><strong>Status:</strong> Completed Credential</p>
+                        </div>
+
+                        <!-- Preserved Certificate Image -->
+                        <div class="cert-img-wrapper" onclick="openCertModal('certificate.png', 'Building with the Claude API', 'Anthropic', 'Verified Completion', '#')">
+                            <img src="certificate.png" alt="Claude with the Anthropic API Certificate" class="cert-img">
+                            <div class="cert-zoom-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> View Full Certificate
+                            </div>
+                        </div>
+
+                        <div class="cert-card-actions">
+                            <button type="button" class="btn-cert-verify" onclick="openCertModal('certificate.png', 'Building with the Claude API', 'Anthropic', 'Verified Completion', '#')">
+                                <i class="fa-solid fa-eye"></i> View Credential
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. HackerRank SQL (Basic) -->
+                <div class="premium-card glow-effect cert-card tilt-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="cert-card-header">
+                            <span class="cert-issuer-badge hackerrank"><i class="fa-solid fa-terminal"></i> HackerRank</span>
+                            <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Skill Certified</span>
+                        </div>
+                        
+                        <h3 class="cert-title">SQL (Basic) Skill Certification</h3>
+                        
+                        <div class="cert-meta-info">
+                            <p><strong>Platform:</strong> HackerRank</p>
+                            <p><strong>Skills:</strong> Relational Queries, Joins, Aggregations, Filtering</p>
+                            <p><strong>Status:</strong> Verified Assessment</p>
+                        </div>
+
+                        <div class="cert-badge-showcase">
+                            <div class="badge-icon-wrap" style="color: #34d399;">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <div class="badge-text-wrap">
+                                <strong>HackerRank Verified</strong>
+                                <span>SQL Relational Foundations</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card-actions">
+                            <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                                <i class="fa-brands fa-github"></i> View Profile Repositories
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. LinkedIn Learning – Introduction to Career Skills in Data Analytics -->
+                <div class="premium-card glow-effect cert-card tilt-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="cert-card-header">
+                            <span class="cert-issuer-badge linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn Learning</span>
+                            <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Course Completion</span>
+                        </div>
+                        
+                        <h3 class="cert-title">Introduction to Career Skills in Data Analytics</h3>
+                        
+                        <div class="cert-meta-info">
+                            <p><strong>Provider:</strong> LinkedIn Learning</p>
+                            <p><strong>Focus:</strong> Data Analysis, Statistical Reasoning, Business Intelligence</p>
+                            <p><strong>Status:</strong> Learning Credential</p>
+                        </div>
+
+                        <div class="cert-badge-showcase">
+                            <div class="badge-icon-wrap" style="color: #38bdf8;">
+                                <i class="fa-solid fa-chart-column"></i>
+                            </div>
+                            <div class="badge-text-wrap">
+                                <strong>Data Analytics Track</strong>
+                                <span>Business Intelligence & Modeling</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card-actions">
+                            <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="btn-cert-verify">
+                                <i class="fa-brands fa-linkedin"></i> View on LinkedIn Profile
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="contact" class="section">
-        <div class="premium-card glow-effect contact-card">
-            <div class="glow-border"></div>
-            <div class="card-content">
-                <h2 class="section-title">Let's <span>Connect</span></h2>
-                <p>I'm ready to bring scalable AI integrations and automated workflows to your team. Let's discuss your next big project.</p>
-                <div class="contact-grid" style="flex-wrap: wrap;">
-                    <a href="mailto:chennamisala9@gmail.com" class="contact-btn">
-                        <span class="icon">✉</span> chennamisala9@gmail.com
-                    </a>
-                    <a href="tel:+918985928915" class="contact-btn">
-                        <span class="icon">📞</span> +91 8985928915
-                    </a>
-                    <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="contact-btn">
-                        <span class="icon" style="font-family: sans-serif; font-weight: bold; color: #0a66c2;">in</span> LinkedIn
-                    </a>
-                    <div class="contact-btn" style="pointer-events: none;">
-                        <span class="icon">📍</span> Hyderabad, India
+            <!-- Continuous Training Subsection -->
+            <div class="training-subsection">
+                <div class="training-card premium-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="training-header">
+                            <div class="training-icon"><i class="fa-brands fa-microsoft"></i></div>
+                            <div>
+                                <h3>Enterprise Training & Hands-on Labs: Microsoft Azure AI & Fabric</h3>
+                                <p class="training-provider">Microsoft Learn Enterprise Track</p>
+                            </div>
+                        </div>
+                        <p class="training-desc">
+                            Active continuous learning covering Microsoft Azure OpenAI Service, Azure AI Search for vector retrieval, Cognitive Services, and Microsoft Fabric Lakehouse & Data Engineering workflows.
+                        </p>
+                        <div class="training-tags">
+                            <span>Azure OpenAI</span><span>Azure AI Search</span><span>Microsoft Fabric</span><span>Data Engineering</span><span>Cognitive Services</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Professional Experience & Education Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="section-tag">Career Milestones</span>
+                <h2 class="section-title">Professional <span>Experience</span></h2>
+                <p class="section-subtitle">Production engineering in AI systems, scalable backend architectures, and intelligent automation.</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <!-- Current Experience: Nevonex IT Solutions -->
+                <div class="premium-card glow-effect experience-card current-role">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="exp-header">
+                            <div>
+                                <span class="exp-badge">Current Role</span>
+                                <h3 class="role-title">AI Engineer</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-building"></i> Nevonex IT Solutions</h4>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar-check"></i> 1.5+ Years (Present)</span>
+                                <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                            </div>
+                        </div>
+
+                        <p class="exp-summary">
+                            Spearheading the engineering of production AI-powered applications, Python backend systems, and intelligent business process automation. Directing development of enterprise rent management platforms, e-commerce architectures, and automated customer conversation workflows.
+                        </p>
+
+                        <div class="exp-highlights-grid">
+                            <div class="highlight-box">
+                                <div class="hl-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                <div>
+                                    <strong>Python & FastAPI Architecture:</strong>
+                                    <span>Engineered asynchronous REST APIs, PostgreSQL relational schemas, SQLAlchemy ORM data layers, and Alembic database migration pipelines.</span>
+                                </div>
+                            </div>
+
+                            <div class="highlight-box">
+                                <div class="hl-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                                <div>
+                                    <strong>MCP & AI Agent Systems:</strong>
+                                    <span>Architected Model Context Protocol (MCP) servers facilitating secure, dynamic tool calling between LLMs and transactional backend databases.</span>
+                                </div>
+                            </div>
+
+                            <div class="highlight-box">
+                                <div class="hl-icon"><i class="fa-solid fa-gears"></i></div>
+                                <div>
+                                    <strong>Intelligent Process Automation:</strong>
+                                    <span>Designed end-to-end n8n workflow pipelines, webhook listener engines, and scheduled task runners for automated rent reminders and tenant notifications.</span>
+                                </div>
+                            </div>
+
+                            <div class="highlight-box">
+                                <div class="hl-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <strong>WhatsApp Cloud API Integration:</strong>
+                                    <span>Implemented high-concurrency Meta WhatsApp Business Cloud API communication engines with template messaging and interactive customer support.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exp-tech-tags">
+                            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>MCP</span><span>LLMs</span><span>n8n</span><span>WhatsApp Cloud API</span><span>Docker</span><span>AWS EC2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Background -->
+                <div class="premium-card glow-effect experience-card education-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="exp-header">
+                            <div>
+                                <span class="exp-badge education">Academic Foundation</span>
+                                <h3 class="role-title">Bachelor of Technology – AI & Data Science</h3>
+                                <h4 class="company-name"><i class="fa-solid fa-graduation-cap"></i> JNTU-Anantapur</h4>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Sept 2020 – May 2024</span>
+                                <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Andhra Pradesh, India</span>
+                            </div>
+                        </div>
+
+                        <p class="exp-summary">
+                            Four-year rigorous engineering curriculum specializing in Artificial Intelligence, Machine Learning algorithms, statistical data modeling, relational databases, and software engineering.
+                        </p>
+                        
+                        <div class="exp-tech-tags">
+                            <span>Artificial Intelligence</span><span>Data Science</span><span>Machine Learning</span><span>Data Structures</span><span>Database Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-tag">Core Technical Stack</span>
+                <h2 class="section-title">Technical <span>Skills</span></h2>
+                <p class="section-subtitle">Structured according to hands-on production expertise, architectures, and engineering familiarity.</p>
+            </div>
+
+            <div class="skills-categorized-grid">
+                <!-- 1. Generative AI & LLMs -->
+                <div class="premium-card skill-group-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="skill-group-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>Generative AI & LLMs</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">RAG (Retrieval-Augmented Gen)</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">Model Context Protocol (MCP)</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">AI Agents & Tool Calling</span><span class="proficiency-tag advanced">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">Prompt Engineering & Structured JSON</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">Sentence Transformers & Embeddings</span><span class="proficiency-tag advanced">Advanced</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Backend Engineering -->
+                <div class="premium-card skill-group-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="skill-group-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend & APIs</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">Python</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">FastAPI</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">SQLAlchemy ORM</span><span class="proficiency-tag expert">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">Pydantic v2</span><span class="proficiency-tag expert">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">Alembic Database Migrations</span><span class="proficiency-tag advanced">Advanced</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Databases & Vector Search -->
+                <div class="premium-card skill-group-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="skill-group-header">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>Databases & Vector DBs</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">PostgreSQL</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">Pinecone Vector Database</span><span class="proficiency-tag expert">Production</span></div>
+                            <div class="skill-item"><span class="skill-name">PGVector & FAISS</span><span class="proficiency-tag advanced">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">SQL Server</span><span class="proficiency-tag advanced">Microsoft Certified</span></div>
+                            <div class="skill-item"><span class="skill-name">MySQL</span><span class="proficiency-tag advanced">Advanced</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Automation & Integrations -->
+                <div class="premium-card skill-group-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="skill-group-header">
+                            <i class="fa-solid fa-gears"></i>
+                            <h3>Automation & Integrations</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">n8n Workflow Automation</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">Meta WhatsApp Cloud API</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">Webhook Listener Pipelines</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">OpenAI Whisper (STT)</span><span class="proficiency-tag advanced">Production</span></div>
+                            <div class="skill-item"><span class="skill-name">Google Sheets & Gmail APIs</span><span class="proficiency-tag advanced">Advanced</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Cloud & DevOps -->
+                <div class="premium-card skill-group-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="skill-group-header">
+                            <i class="fa-solid fa-cloud"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">AWS EC2</span><span class="proficiency-tag advanced">Production</span></div>
+                            <div class="skill-item"><span class="skill-name">Docker</span><span class="proficiency-tag advanced">Production</span></div>
+                            <div class="skill-item"><span class="skill-name">Nginx Reverse Proxy</span><span class="proficiency-tag advanced">Production</span></div>
+                            <div class="skill-item"><span class="skill-name">Oracle Cloud Infrastructure</span><span class="proficiency-tag advanced">Oracle Certified</span></div>
+                            <div class="skill-item"><span class="skill-name">Git & GitHub CI/CD</span><span class="proficiency-tag advanced">Advanced</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Frontend & Mobile -->
+                <div class="premium-card skill-group-card glow-effect">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="skill-group-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Frontend & Mobile</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">React.js & Vite</span><span class="proficiency-tag advanced">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">Flutter (Mobile & Web)</span><span class="proficiency-tag advanced">Production</span></div>
+                            <div class="skill-item"><span class="skill-name">HTML5, CSS3, JavaScript</span><span class="proficiency-tag advanced">Advanced</span></div>
+                            <div class="skill-item"><span class="skill-name">Responsive Design</span><span class="proficiency-tag expert">Expert</span></div>
+                            <div class="skill-item"><span class="skill-name">Power BI & Excel</span><span class="proficiency-tag intermediate">Intermediate</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="section-header">
+                <span class="section-tag">Recognitions & Impact</span>
+                <h2 class="section-title">Key <span>Achievements</span></h2>
+                <p class="section-subtitle">Tangible impact delivered across production software, automation, and enterprise solutions.</p>
+            </div>
+
+            <div class="achievements-grid">
+                <!-- Achievement 1: EzStaf Google Play Launch -->
+                <div class="premium-card glow-effect achievement-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="achieve-badge"><i class="fa-brands fa-google-play"></i> Mobile Deployment</div>
+                        <h3>EzStaf Mobile Launch on Google Play</h3>
+                        <p>
+                            Successfully deployed and launched the <strong>EzStaf</strong> mobile application on the official Google Play Store, providing recruiters with AI-driven semantic talent matching.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Achievement 2: WhatsApp CRM & Rent Automation -->
+                <div class="premium-card glow-effect achievement-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="achieve-badge"><i class="fa-brands fa-whatsapp"></i> Communication Pipeline</div>
+                        <h3>WhatsApp CRM & Rent Automation</h3>
+                        <p>
+                            Engineered an automated WhatsApp billing and reminder pipeline handling recurring tenant communication, automated receipt uploads, and multi-tenant ledger updates with zero message drop.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Achievement 3: Business Automation Engine -->
+                <div class="premium-card glow-effect achievement-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="achieve-badge"><i class="fa-solid fa-bolt"></i> Workflow Orchestration</div>
+                        <h3>Business Automation Engine</h3>
+                        <p>
+                            Designed end-to-end n8n workflows automating candidate communication, OCR transcriptions, and resume parsing, reducing manual overhead and cutting turnaround time by over 65%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Achievement 4: Stafi Solution Web Launch -->
+                <div class="premium-card glow-effect achievement-card">
+                    <div class="glow-border"></div>
+                    <div class="card-content">
+                        <div class="achieve-badge"><i class="fa-solid fa-globe"></i> Enterprise Presence</div>
+                        <h3>Stafi Solution Web Launch</h3>
+                        <p>
+                            Architected, engineered, and successfully launched the official corporate web presence for <strong>Stafi Solution</strong>, establishing their core digital identity and lead capture pipeline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Opportunities Section -->
+        <section id="contact" class="section">
+            <div class="premium-card glow-effect contact-card">
+                <div class="glow-border"></div>
+                <div class="card-content">
+                    <div class="status-badge" style="margin: 0 auto 1.5rem auto;">
+                        <span class="pulse-dot"></span> Available for Hire & Freelance Projects
+                    </div>
+
+                    <h2 class="section-title">Let's <span>Connect & Build</span></h2>
+                    
+                    <p class="contact-pitch">
+                        I am currently available for <strong>full-time AI Engineering roles</strong>, Python backend development, intelligent automation consulting, and freelance contract engagements. Whether you need a production RAG system, an autonomous AI agent, or custom WhatsApp CRM automation, let's discuss your next milestone.
+                    </p>
+
+                    <div class="contact-grid">
+                        <!-- Email -->
+                        <a href="mailto:chennamisala9@gmail.com" class="contact-btn">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <div class="btn-text">
+                                <small>Email Me</small>
+                                <strong>chennamisala9@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <!-- Direct WhatsApp -->
+                        <a href="https://wa.me/918985928195?text=Hi%20Chennakeshava,%20I%20would%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="contact-btn contact-whatsapp">
+                            <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <div class="btn-text">
+                                <small>Chat on WhatsApp</small>
+                                <strong>+91 8985928195</strong>
+                            </div>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:+918985928195" class="contact-btn">
+                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                            <div class="btn-text">
+                                <small>Call Direct</small>
+                                <strong>+91 8985928195</strong>
+                            </div>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                            <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <div class="btn-text">
+                                <small>Connect on LinkedIn</small>
+                                <strong>Chennakeshava Misala</strong>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" class="contact-btn">
+                            <span class="icon"><i class="fa-brands fa-github"></i></span>
+                            <div class="btn-text">
+                                <small>GitHub Repositories</small>
+                                <strong>github.com/keshava-1</strong>
+                            </div>
+                        </a>
+
+                        <!-- Location -->
+                        <div class="contact-btn location-btn">
+                            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <div class="btn-text">
+                                <small>Location</small>
+                                <strong>Hyderabad, India</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Misala Chennakeshava. Crafted with precision.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                CK<span>.AI</span>
+            </div>
+            <p>&copy; 2026 Chennakeshava Misala. Crafted with precision & engineering excellence.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/keshava-1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/chennakeshava-misala-81763324b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/918985928195" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:chennamisala9@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Certificate Modal -->
-    <div id="certModal" class="modal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImg">
+    <!-- Universal Certificate Modal Viewer -->
+    <div id="certModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle">
+        <div class="modal-box">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <img class="modal-content-img" id="modalImg" src="" alt="Certificate Preview">
+                <div class="modal-info-panel">
+                    <h3 id="modalCertTitle">Certificate Name</h3>
+                    <p id="modalCertIssuer">Issuer: Microsoft</p>
+                    <p id="modalCertID">Credential ID: <code>B32BB12428F1AB64</code></p>
+                    <a id="modalCertLink" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-sm">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Official Credential
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
