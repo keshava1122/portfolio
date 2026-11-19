@@ -744,4 +744,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Keyboard accessibility for certificate preview cards
+    const certInteractiveItems = document.querySelectorAll('.cert-img-wrapper, .cert-badge-showcase');
+    certInteractiveItems.forEach(item => {
+        item.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                item.click();
+            }
+        });
+    });
+
 });
